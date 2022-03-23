@@ -9,7 +9,7 @@ mongoose.connect(MONGOURI)
 mongoose.connection.on('connected', () => {
     console.log("Connected to mongodb")
 })
-
+ 
 mongoose.connection.on('error', (err) => {
     console.log("error", err)
 })
